@@ -7,6 +7,16 @@
     <title>Login</title>
 </head>
 <body>
+    <section class="navbar">
+        <table>
+            <tr>
+                <td><a href="http://localhost/Pharmacy24/view/Home.php">Home</a></td>
+                <td><a href="http://localhost/Pharmacy24/view/login.php">Login</a></td>
+                <td><a href="http://localhost/Pharmacy24/view/about.php">About</a></td>
+                <td><a href="http://localhost/Pharmacy24/view/contact.php">Contact</a></td>
+            </tr>
+        </table>
+    </section>
     <form action="../control/checkLogin.php" method="Post">
     <table>
         <tr>
@@ -30,20 +40,20 @@
         </td>
     </tr>
     <tr>
-
-    </tr>
-    <tr>
-        <td>
-
-        </td>
         <td>
             <input type="submit" value="Submit">
         </td>
-        <td>
-
-        </td>
-        </tr>
+    </tr>
     </table>
+    </form>
+    <form action="registration.php">
+        <table>
+            <tr>
+                <td><p>Don't have an account?</p></td>
+                <td><input type="submit" value="Registration"></td>
+            </tr>
+        </table>
+        
     </form>
 </body>
 </html>
