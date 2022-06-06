@@ -1,23 +1,12 @@
 <?php
-$username = $_REQUEST["username"];
-$password = $_REQUEST["password"];
+$verify = file_get_contents("data.json");
+$data =  json_decode($verify);
 
-if($username = "ifte"){
-    echo "User found";
-}
-else{
-    echo "No user found";
-}
-
-if(strlen($password) < 8){
-    echo "Password must be atleast 8 charecter";
-}
-else{
-    if($password = "123456789"){
-        echo "Welcome back ". $username;
-    }
-    else{
-        "Incorrect password";
+if(isset($_POST["submit"])){
+    foreach($data as $key=>$value){
+        if($value->username == $_REQUEST["username"] && $value->password ==$_REQUEST["password"]){
+            header("Location: ../view/home.php");
+        }
     }
 }
 ?>
