@@ -1,5 +1,5 @@
 <?php
-$verify = file_get_contents("data.json");
+$verify = file_get_contents("../Data/data.json");
 $data =  json_decode($verify);
 
     foreach($data as $key=>$value){
