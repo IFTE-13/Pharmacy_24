@@ -4,6 +4,7 @@
 </head>
 <body>
     <section class="navbar">
+        <center>
         <table>
             <tr>
                 <td>
@@ -20,6 +21,7 @@
                 <td><h3><a href="../view/contact.php">Contact</a></h2></td>
             </tr>
         </table>
+        </center>
     </section>
 </body>
 </html>
