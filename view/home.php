@@ -6,6 +6,9 @@
 <body>
     <?php
         include("navbar.php");
+        include("../control/homeData.php");
+    ?>
+    <?php
     ?>
 </body>
 </html>
