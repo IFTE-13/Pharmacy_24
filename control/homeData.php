@@ -29,9 +29,11 @@
                                 <td><p>$productData->quantity</p></td>
                                 <td><p>View</p></td>
                                 <td>
-                                    <form action='../control/cart.php' method='POST'>
-                                        <input type='submit'>Add</input>
-                                    </form>
+                                    <center>
+                                        <form action='../control/cart.php' method='POST'>
+                                            <input type='submit' value='Add'></input>
+                                        </form>
+                                    </center>
                                 </td>
                             </tr>
                             ";
