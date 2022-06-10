@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+    include("");
+?>
 <html lang="en">
 <head>
     <title>Registrtion</title>
