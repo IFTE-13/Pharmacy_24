@@ -21,7 +21,7 @@
                     <table>
                         <tr>
                             <td><h3>Name: </h3></td>
-                            <td><h3><?php ?></h3></td>
+                            <td><h3><?php echo $name ?></h3></td>
                         </tr>
                         <tr>
                             <td><h3>Username: </h3></td>

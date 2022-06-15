@@ -5,7 +5,15 @@
 <html>
     <body>
        <center>
-       <u><h2>Change Password</h2></u>
+       <table width="50%">
+        <tr>
+            <td>
+                <?php
+                    include("adminSideBar.php");
+                ?>
+            </td>
+            <td>
+            <u><h2>Change Password</h2></u>
         <form action="" method="POST">
             <table>
                 <tr>
@@ -14,17 +22,17 @@
                    
         
                 </td>
-                <td><input type="text" name="current" id=""> </td>
+                <td><input type="password" name="current" id=""> </td>
             </tr>
             <tr>
                 <td><h3>New Password</h3></td>
-                <td><input type="text" name="new" id=""></td>
+                <td><input type="password" name="new" id=""></td>
             </tr>
         
         <tr>
             <td>
             <h3>Confirm Password</h3></td>
-            <td><input type="text" name="confirm" id="">
+            <td><input type="password" name="confirm" id="">
             </td>
         </tr>
         <tr>
@@ -39,6 +47,9 @@
     </tr>
     </table>
         </form>
+            </td>
+        </tr>
+       </table>
        </center>
     </body>
 </html>
