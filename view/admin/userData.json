@@ -16,5 +16,14 @@
         "dateofbirth": "2022-05-29",
         "gender": "female",
         "status": "unblock"
+    },
+    {
+        "name": "a",
+        "email": "b@gmail",
+        "username": "admin",
+        "password": "00000000",
+        "dateofbirth": "2022-05-29",
+        "gender": "female",
+        "status": "unblock"
     }
 ]
