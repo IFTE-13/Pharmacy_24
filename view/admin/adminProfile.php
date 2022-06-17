@@ -1,17 +1,14 @@
 <?php
-    include("../navbar.php");
     include("../../control/checkAdminLogin.php");
 ?>
 
 <html>
     <body>
+    <h3><?php echo "Welcome back, " . $_SESSION["username"]; ?></h3>
         <table width="80%">
             <tr>
                 <td>
                     <center>
-                    <h3><?php
-                        echo "Welcome back, " . $_SESSION["username"];
-                    ?></h3>
                     <?php
                         include("adminSideBar.php");
                     ?>

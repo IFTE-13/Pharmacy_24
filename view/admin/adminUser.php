@@ -1,5 +1,5 @@
 <?php
-    include("../navbar.php");
+    include("adminSideBar.php");
     include("../../control/adminUserAdd.php");
     
 ?>
@@ -10,17 +10,15 @@
             <tr>
                 <td>
                     <?php
-                        include("adminSideBar.php");
-                    ?>
-                </td>
-                <td>
-                    <?php
                         include("../../control/customerTable.php");
                     ?>
                 </td>
                 <td>
         <form action="" method="POST">
                     <table>
+                        <tr>
+                            <td><h1><u>Add User</u></h1></td>
+                        </tr>
         <tr>
             <td><h3>Name:</h3></td>
             <td><input type="text" name="name" id=""></td>
@@ -35,11 +33,7 @@
         </tr>
         <tr>
             <td><h3>Password:</h3></td>
-            <td><input type="password" name="password" id=""></td>
-        </tr>
-        <tr>
-            <td><h3>Confirm Password:</h3></td>
-            <td><input type="password" name="confirmPassword" id=""></td>
+            <td><input type="password" name="password" id="" placeholder="00000000" disabled></td>
         </tr>
         <tr>
             <td><h3>Gender:</h3></td>
