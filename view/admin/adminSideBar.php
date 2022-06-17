@@ -1,5 +1,6 @@
 <html>
     <body>
+        <center>
         <table>
             <tr>
                 <td>
@@ -18,5 +19,6 @@
                 <td><h3><a href="http://localhost/Pharmacy24/control/logout.php">Logout</a></h2></td>
             </tr>
         </table>
+        </center>
     </body>
 </html>

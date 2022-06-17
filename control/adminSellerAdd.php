@@ -8,6 +8,7 @@ $sellerAdded = "";
         $dob = $_REQUEST['dob'];
         $gender = $_REQUEST['gender'];
         $joiningDate = $_REQUEST['joiningDate'];
+        $password = "00000000";
 
         $filecontents=file_get_contents("sellerData.json",true);
         $arrphp = json_decode($filecontents);

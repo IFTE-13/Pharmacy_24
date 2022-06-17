@@ -1,4 +1,5 @@
 <?php
+    include("adminSideBar.php");
     include("../../control/adminChangePassword.php");
 ?>
 <html>
@@ -6,11 +7,6 @@
        <center>
        <table width="50%">
         <tr>
-            <td>
-                <?php
-                    include("adminSideBar.php");
-                ?>
-            </td>
             <td>
             <u><h2>Change Password</h2></u>
         <form action="" method="POST">

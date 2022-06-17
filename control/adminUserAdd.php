@@ -8,6 +8,7 @@ $userAdded = "";
         $dob = $_REQUEST['dob'];
         $gender = $_REQUEST['gender'];
         $status = "unblock";
+        $password = "00000000";
 
         $filecontents=file_get_contents("userData.json",true);
         $arrphp = json_decode($filecontents);

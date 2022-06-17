@@ -8,6 +8,7 @@ $supplierAdded = "";
         $dob = $_REQUEST['dob'];
         $gender = $_REQUEST['gender'];
         $company = $_REQUEST['company'];
+        $password = "00000000";
 
         $filecontents=file_get_contents("supplierData.json",true);
         $arrphp = json_decode($filecontents);
