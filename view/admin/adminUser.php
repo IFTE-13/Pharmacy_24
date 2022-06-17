@@ -1,14 +1,24 @@
 <?php
-    include("");
+    include("adminSideBar.php");
+    include("../../control/adminUserAdd.php");
+    
 ?>
-<html lang="en">
-<head>
-    <title>Registrtion</title>
-</head>
-<body>
-    <h1>Registraion<hr></h1>
-    <form action="../control/registrationCheck.php" method="POST">
-    <table>
+
+<html>
+    <body>
+        <table width="100%">
+            <tr>
+                <td>
+                    <?php
+                        include("../../control/customerTable.php");
+                    ?>
+                </td>
+                <td>
+        <form action="" method="POST">
+                    <table>
+                        <tr>
+                            <td><h1><u>Add User</u></h1></td>
+                        </tr>
         <tr>
             <td><h3>Name:</h3></td>
             <td><input type="text" name="name" id=""></td>
@@ -23,11 +33,7 @@
         </tr>
         <tr>
             <td><h3>Password:</h3></td>
-            <td><input type="password" name="password" id=""></td>
-        </tr>
-        <tr>
-            <td><h3>Confirm Password:</h3></td>
-            <td><input type="password" name="confirmPassword" id=""></td>
+            <td><input type="password" name="password" id="" placeholder="00000000" disabled></td>
         </tr>
         <tr>
             <td><h3>Gender:</h3></td>
@@ -45,15 +51,22 @@
         <tr>
             <td></td>
             <td>
-                <input type="submit" value="Submit">
-                <input type="button" value="Reset">
+                <input type="submit" value="Submit" name="adminAddUser">
+                <input type="reset" value="Reset">
             </td>
         </tr>
         <tr>
-            <td><h3><small>Have an account?</small></h3></td>
-            <td><a href="http://localhost/Pharmacy24/view/login.php">Login</a></td>
+            <td></td>
+        <td>
+        <?php
+                    echo $userAdded;
+                ?>
+        </td>
         </tr>
     </table>
-    </form>
-</body>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>

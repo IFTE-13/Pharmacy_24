@@ -1,14 +1,25 @@
 <?php
-    include("");
+    include("../../control/adminSellerAdd.php");
+    
 ?>
-<html lang="en">
-<head>
-    <title>Registrtion</title>
-</head>
-<body>
-    <h1>Registraion<hr></h1>
-    <form action="../control/registrationCheck.php" method="POST">
-    <table>
+
+<html>
+    <body>
+        <table width="100%">
+            <tr>
+                <td>
+                    <?php
+                        include("adminSideBar.php");
+                    ?>
+                </td>
+                <td>
+                    <?php
+                        include("../../control/sellerTable.php");
+                    ?>
+                </td>
+                <td>
+        <form action="" method="POST">
+                    <table>
         <tr>
             <td><h3>Name:</h3></td>
             <td><input type="text" name="name" id=""></td>
@@ -43,17 +54,28 @@
             <td><input type="date" name="dob" id=""></td>
         </tr>
         <tr>
+            <td><h3>Joining Date:</h3></td>
+            <td><input type="date" name="joiningDate" id=""></td>
+        </tr>
+        <tr>
             <td></td>
             <td>
-                <input type="submit" value="Submit">
-                <input type="button" value="Reset">
+                <input type="submit" value="Submit" name="adminAddSeller">
+                <input type="reset" value="Reset">
             </td>
         </tr>
         <tr>
-            <td><h3><small>Have an account?</small></h3></td>
-            <td><a href="http://localhost/Pharmacy24/view/login.php">Login</a></td>
+            <td></td>
+        <td>
+        <?php
+                    echo $sellerAdded;
+                ?>
+        </td>
         </tr>
     </table>
-    </form>
-</body>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>

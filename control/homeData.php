@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <center>
-            <table border='1'>
+            <table border='1' width="100%">
                 <thead> 
                         <tr>
                             <th>Medicine Name</th>
@@ -40,6 +39,5 @@
                     }?>
                 </tbody>
             </table>
-        </center>
     </body>
 </html>

@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Admin",
+    "email": "admin@gmail.com",
+    "username": "admin",
+    "password": "admin",
+    "dateofbirth": "2022-05-30",
+    "gender": "male",
+    "status": "unblock"
+  },
+  {
+    "name": "Mariam",
+    "email": "chittonondi.admin@gmail.com",
+    "username": "mariam",
+    "password": "123",
+    "dateofbirth": "2022-05-29",
+    "gender": "female",
+    "status": "unblock"
+  },
+  {
+    "name": "Mariam",
+    "email": "ifte.phoenix@gmail.com",
+    "username": "mariam",
+    "password": "123456789",
+    "dateofbirth": "2022-05-30",
+    "gender": "female",
+    "status": "unblock"
+  }
+]

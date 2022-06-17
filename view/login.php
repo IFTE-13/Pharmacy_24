@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+    session_start();
+    if(isset($_SESSION["username"])){
+        header("Location: ../view/home.php");
+    }
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +15,7 @@
     <?php
         include("navbar.php")
     ?>
-    <form action="../control/checkLogin.php" method="POST">
+    <!-- <form action="../control/checkLogin.php" method="POST">
     <table>
         <tr>
             <td><h1>Login</h1><hr></td>
@@ -47,6 +52,15 @@
             </tr>
         </table>
         
-    </form>
+    </form> -->
+
+    <!-- <input type="submit" value="ADMIN" name="admin"> -->
+    <center>
+        <u><h2>Login as:</h2></u>
+    <a href="../view/admin/adminLogin.php">ADMIN</a><br><br>
+    <a href="../view/admin/customerLogin.php">CUSTOMER</a><br><br>
+    <a href="../view/admin/sellerLogin.php">SELLER</a><br><br>
+    <a href="../view/admin/supplierLogin.php">SUPPLIER</a>
+    </center>
 </body>
 </html>
