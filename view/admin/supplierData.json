@@ -6,15 +6,17 @@
         "password": "admin",
         "dateofbirth": "2022-05-30",
         "gender": "male",
-        "company": "IFTE"
+        "company": "IFTE",
+        "status": "unblock"
     },
     {
         "name": "MOHAMMED IFTEKHAR",
         "email": "ifte.phoenix@gmail.com",
-        "username": "1234",
-        "password": "12",
+        "username": "ifte",
+        "password": "00000000",
         "dateofbirth": "2022-05-29",
         "gender": "female",
-        "company": "none"
+        "company": "none",
+        "status": "block"
     }
 ]

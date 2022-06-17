@@ -24,6 +24,6 @@
         "password": "00000000",
         "dateofbirth": "2022-05-29",
         "gender": "female",
-        "status": "unblock"
+        "status": "block"
     }
 ]

@@ -4,11 +4,9 @@ $supplierAdded = "";
         $name = $_REQUEST['name'];
         $email = $_REQUEST['email'];
         $username = $_REQUEST['username'];
-        $password = $_REQUEST['password'];
         $dob = $_REQUEST['dob'];
         $gender = $_REQUEST['gender'];
         $company = $_REQUEST['company'];
-        $password = "00000000";
 
         $filecontents=file_get_contents("supplierData.json",true);
         $arrphp = json_decode($filecontents);
@@ -17,10 +15,11 @@ $supplierAdded = "";
             "name" => $name,
             'email' => $email,
             'username' => $username,
-            'password' => $password,
+            'password' => '00000000',
             'dateofbirth' => $dob,
             'gender' => $gender,
-            'company' => $company
+            'company' => $company,
+            'status' => 'unblock'
             
         );
             $arrphp []=$myarray;
