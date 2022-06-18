@@ -1,34 +1,34 @@
 <?php
-$sellerAdded = "";
-    if(isset($_POST['adminAddSeller'])){
+$supplierAdded = "";
+    if(isset($_POST['adminAddSupplier'])){
         $name = $_REQUEST['name'];
         $email = $_REQUEST['email'];
         $username = $_REQUEST['username'];
-        $password = $_REQUEST['password'];
         $dob = $_REQUEST['dob'];
         $gender = $_REQUEST['gender'];
-        $joiningDate = $_REQUEST['joiningDate'];
+        $company = $_REQUEST['company'];
 
-        $filecontents=file_get_contents("sellerData.json",true);
+        $filecontents=file_get_contents("supplierData.json",true);
         $arrphp = json_decode($filecontents);
 
         $myarray = array(
             "name" => $name,
             'email' => $email,
             'username' => $username,
-            'password' => $password,
+            'password' => '00000000',
             'dateofbirth' => $dob,
             'gender' => $gender,
-            'joiningDate' => $joiningDate
+            'company' => $company,
+            'status' => 'unblock'
             
         );
             $arrphp []=$myarray;
             $jsonarr= json_encode($arrphp,JSON_PRETTY_PRINT);
-            if(file_put_contents("sellerData.json",$jsonarr)){
-                $sellerAdded = "Seller added successfully.";
+            if(file_put_contents("supplierData.json",$jsonarr)){
+                $supplierAdded = "Supplier added successfully.";
             }
             else{
-                $sellerAdded = "Couldn't add Seller";
+                $supplierAdded = "Couldn't add supplier";
             }
     }
 

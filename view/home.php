@@ -1,5 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+    if(isset($_SESSION["username"]) && isset($_SESSION["role"])){
+        header("Location: adminProfile.php");
+    }
+?>
+<html>
 <head>
     <title>Pharmacy 24</title>
 </head>

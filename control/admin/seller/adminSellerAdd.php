@@ -1,34 +1,33 @@
 <?php
-$userAdded = "";
-    if(isset($_POST['adminAddUser'])){
+$sellerAdded = "";
+    if(isset($_POST['adminAddSeller'])){
         $name = $_REQUEST['name'];
         $email = $_REQUEST['email'];
         $username = $_REQUEST['username'];
-        $password = $_REQUEST['password'];
         $dob = $_REQUEST['dob'];
         $gender = $_REQUEST['gender'];
-        $status = "unblock";
+        $joiningDate = $_REQUEST['joiningDate'];
 
-        $filecontents=file_get_contents("userData.json",true);
+        $filecontents=file_get_contents("sellerData.json",true);
         $arrphp = json_decode($filecontents);
 
         $myarray = array(
             "name" => $name,
             'email' => $email,
             'username' => $username,
-            'password' => $password,
+            'password' => '00000000',
             'dateofbirth' => $dob,
             'gender' => $gender,
-            'status' => $status
+            'joiningDate' => $joiningDate
             
         );
             $arrphp []=$myarray;
             $jsonarr= json_encode($arrphp,JSON_PRETTY_PRINT);
-            if(file_put_contents("userData.json",$jsonarr)){
-                $userAdded = "User added successfully.";
+            if(file_put_contents("sellerData.json",$jsonarr)){
+                $sellerAdded = "Seller added successfully.";
             }
             else{
-                $userAdded = "Couldn't add user";
+                $sellerAdded = "Couldn't add Seller";
             }
     }
 

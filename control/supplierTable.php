@@ -11,6 +11,7 @@
                             <th>Data Of birth</th>
                             <th>Gender</th>
                             <th>Company</th>
+                            <th>Supplier</th>
                         </tr>
                 </thead>
                 <tbody>
@@ -30,6 +31,7 @@
                                 <td><p>$userData->dateofbirth</p></td>
                                 <td><p>$userData->gender</p></td>
                                 <td><p>$userData->company</p></td>
+                                <td><p>$userData->status</p></td>
                             </tr>
                             </center>
                             ";

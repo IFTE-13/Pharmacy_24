@@ -18,6 +18,7 @@
         "status": "unblock"
     },
     {
+<<<<<<< HEAD
         "name": "Mariam",
         "email": "ifte.phoenix@gmail.com",
         "username": "mariam",
@@ -158,5 +159,14 @@
         "Username": "",
         "Password": "",
         "DateofBirth": ""
+=======
+        "name": "a",
+        "email": "b@gmail",
+        "username": "admin",
+        "password": "00000000",
+        "dateofbirth": "2022-05-29",
+        "gender": "female",
+        "status": "block"
+>>>>>>> 99388b8062a2d50dd2af678e223526d8ae9414af
     }
 ]
