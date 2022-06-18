@@ -1,16 +1,20 @@
+<?php
+    include("customertopbar.php");  
+?>
+
 <html>
   <head>  
  
 </head>
 <body>
-    <u><h1> Profile </h1></u>
+    <u><h1>Profile</h1></u>
     <table>
         <tr>
             <td><h3>Name: </h3></td>
             <td><input type="text" name="name" id=""></td>
         </tr>
         <tr>
-            <td><h3>Email: </h3><M>
+            <td><h3>Email: </h3></td>
             <td><input type="email" name="email" id=""></td>
         </tr>
         <tr>
