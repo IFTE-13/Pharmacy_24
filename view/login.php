@@ -58,7 +58,7 @@
     <center>
         <u><h2>Login as:</h2></u>
     <a href="../view/admin/adminLogin.php">ADMIN</a><br><br>
-    <a href="../view/admin/customerLogin.php">CUSTOMER</a><br><br>
+    <a href="../view/customer/customerlogin.php">CUSTOMER</a><br><br>
     <a href="../view/admin/sellerLogin.php">SELLER</a><br><br>
     <a href="../view/admin/supplierLogin.php">SUPPLIER</a>
     </center>
