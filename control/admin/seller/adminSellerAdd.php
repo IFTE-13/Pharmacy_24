@@ -23,7 +23,7 @@ $sellerAdded = "";
         );
             $arrphp []=$myarray;
             $jsonarr= json_encode($arrphp,JSON_PRETTY_PRINT);
-            if(file_put_contents("sellerData.json",$jsonarr)){
+            if(file_put_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/sellerData.json',$jsonarr)){
                 $sellerAdded = "Seller added successfully.";
             }
             else{

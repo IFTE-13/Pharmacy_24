@@ -1,5 +1,5 @@
-[
-    {
+{
+    "0": {
         "name": "Admin",
         "email": "admin@gmail.com",
         "username": "admin",
@@ -8,7 +8,7 @@
         "gender": "male",
         "status": "unblock"
     },
-    {
+    "1": {
         "name": "Mariam",
         "email": "chittonondi.admin@gmail.com",
         "username": "mariam",
@@ -17,13 +17,13 @@
         "gender": "female",
         "status": "unblock"
     },
-    {
-        "name": "a",
-        "email": "b@gmail",
-        "username": "admin",
+    "3": {
+        "name": "",
+        "email": "",
+        "username": "",
         "password": "00000000",
-        "dateofbirth": "2022-05-29",
-        "gender": "female",
-        "status": "block"
+        "dateofbirth": "",
+        "gender": null,
+        "status": "unblock"
     }
-]
+}

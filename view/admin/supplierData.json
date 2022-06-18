@@ -18,5 +18,15 @@
         "gender": "female",
         "company": "none",
         "status": "block"
+    },
+    {
+        "name": "Mariam",
+        "email": "ifte.phoenix@gmail.com",
+        "username": "san",
+        "password": "00000000",
+        "dateofbirth": "2022-05-29",
+        "gender": "female",
+        "company": "none",
+        "status": "unblock"
     }
 ]

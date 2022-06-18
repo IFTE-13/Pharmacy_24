@@ -16,7 +16,7 @@
                 </thead>
                 <tbody>
                     <?php
-                        $load = file_get_contents("http://localhost/Pharmacy24/view/admin/sellerData.json");
+                        $load = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/sellerData.json');
                         $user =  json_decode($load);
 
                         foreach($user as $key=>$userData){

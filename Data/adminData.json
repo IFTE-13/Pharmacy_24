@@ -1,13 +1,13 @@
 [
-  {
-    "name": "Admin",
-    "email": "admin@gmail.com",
-    "username": "admin",
-    "password": "admin",
-    "dateofbirth": "1980-05-29",
-    "gender": "male",
-    "nationality": "Bangladeshi",
-    "address": "Dhaka",
-    "phone": "01234567890"
-  }
+    {
+        "name": "Admin",
+        "email": "admin@gmail.com",
+        "username": "admin",
+        "password": "123456",
+        "dateofbirth": "1980-05-29",
+        "gender": "male",
+        "nationality": "Bangladeshi",
+        "address": "Dhaka",
+        "phone": "01234567890"
+    }
 ]

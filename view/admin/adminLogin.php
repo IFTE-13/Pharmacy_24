@@ -1,6 +1,6 @@
 <?php
     include('../navbar.php');
-    include('../../control/checkAdminLogin.php');
+    include('../../control/admin/checkAdminLogin.php');
     if(isset($_SESSION["username"])){
         header("Location: adminProfile.php");
     }

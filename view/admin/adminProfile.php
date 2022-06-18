@@ -1,6 +1,6 @@
 <?php
     include("adminSideBar.php");
-    include("../../control/checkAdminLogin.php");
+    include("../../control/admin/checkAdminLogin.php");
 ?>
 
 <html>
@@ -8,8 +8,13 @@
         <title>Profile</title>
     </head>
     <body>
-    <h3><?php echo "Welcome back, " . $_SESSION["username"]; ?></h3>
     <table width="100%">
+        <tr>
+            <td>
+            <a href="../admin/adminProfile.php">| Profile |</a>
+            <a href="../admin/adminPassChange.php">Change Password |</a>
+            </td>
+        </tr>
         <tr>
             <td>
                 <center>
