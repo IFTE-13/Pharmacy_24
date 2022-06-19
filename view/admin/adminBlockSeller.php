@@ -56,7 +56,7 @@
             <td></td>
         <td>
         <?php
-                    echo $userBlocked;
+                    echo $sellerBlocked;
                 ?>
         </td>
         </tr>

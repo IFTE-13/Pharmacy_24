@@ -8,7 +8,7 @@ $userAdded = "";
         $gender = $_REQUEST['gender'];
         $status = "unblock";
 
-        $filecontents=file_get_contents("userData.json",true);
+        $filecontents=file_get_contents("http://localhost/Pharmacy24/data/userData.json",true);
         $arrphp = json_decode($filecontents);
 
         $myarray = array(
@@ -27,7 +27,7 @@ $userAdded = "";
                 $userAdded = "Please fill up all the fields";
             }
             else{
-                if(file_put_contents("userData.json",$jsonarr)){
+                if(file_put_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/userData.json',$jsonarr)){
                     $userAdded = "User added successfully.";
                 }
                 else{

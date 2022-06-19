@@ -15,6 +15,7 @@
             <td>
             <a href="../admin/adminProfile.php">| Profile |</a>
             <a href="../admin/adminPassChange.php">Change Password |</a>
+            <a href="../admin/adminUpdateProfile.php">Update Profile |</a>
             </td>
         </tr>
         <tr>
@@ -29,17 +30,17 @@
                    
         
                 </td>
-                <td><input type="password" name="current" id=""> </td>
+                <td><h3><input type="password" name="current" id=""></h3> </td>
             </tr>
             <tr>
                 <td><h3>New Password</h3></td>
-                <td><input type="password" name="new" id=""></td>
+                <td><h3><input type="password" name="new" id=""></h3></td>
             </tr>
         
         <tr>
             <td>
             <h3>Confirm Password</h3></td>
-            <td><input type="password" name="confirm" id="">
+            <td><h3><input type="password" name="confirm" id=""></h3>
             </td>
         </tr>
         <tr>

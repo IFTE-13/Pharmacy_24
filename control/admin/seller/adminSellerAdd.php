@@ -8,7 +8,7 @@ $sellerAdded = "";
         $gender = $_REQUEST['gender'];
         $joiningDate = $_REQUEST['joiningDate'];
 
-        $filecontents=file_get_contents("sellerData.json",true);
+        $filecontents=file_get_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/sellerData.json',true);
         $arrphp = json_decode($filecontents);
 
         $myarray = array(
@@ -18,7 +18,8 @@ $sellerAdded = "";
             'password' => '00000000',
             'dateofbirth' => $dob,
             'gender' => $gender,
-            'joiningDate' => $joiningDate
+            'joiningDate' => $joiningDate,
+            'status' => 'unblock'
             
         );
             $arrphp []=$myarray;

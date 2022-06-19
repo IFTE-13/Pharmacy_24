@@ -1,12 +1,12 @@
 <?php
-    $userBlocked = "";
+    $sellerBlocked = "";
     $new_data = "";
     $verifyAdmin = file_get_contents("http://localhost/Pharmacy24/data/sellerData.json", true);
     $data =  json_decode($verifyAdmin);
 
     if(isset($_POST["adminBlockSeller"])){
         if(empty($_REQUEST["name"])||empty($_REQUEST["email"])){
-            $userBlocked = 'None of the fields cannot be empty';
+            $sellerBlocked = 'None of the fields cannot be empty';
         }
         else{
             foreach($data as $key=>$value){
@@ -14,11 +14,11 @@
                         $value->status = $_REQUEST["status"];
                         $new_data = json_encode($data,JSON_PRETTY_PRINT);
                         if(file_put_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/sellerData.json',$new_data)){
-                            $userBlocked = "Successful";
+                            $sellerBlocked = "Successful";
                         }
                 }
                 else{
-                    $userBlocked = "Operation unsuccessful";
+                    $sellerBlocked = "Operation unsuccessful";
                 }
             }
         }

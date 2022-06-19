@@ -1,12 +1,22 @@
 [
     {
-        "name": "Admin",
-        "email": "admin@gmail.com",
-        "username": "admin",
-        "password": "admin",
-        "dateofbirth": "2022-05-30",
+        "name": "Mariam",
+        "email": "chittonondi.admin@gmail.com",
+        "username": "san",
+        "password": "00000000",
+        "dateofbirth": "2022-05-29",
         "gender": "male",
-        "joiningDate": "2022-05-30",
+        "joiningDate": "2022-05-29",
         "status": "block"
+    },
+    {
+        "name": "a",
+        "email": "b@gmail",
+        "username": "chittonondi.admin@gmail.com",
+        "password": "00000000",
+        "dateofbirth": "2022-05-29",
+        "gender": "female",
+        "joiningDate": "2022-05-29",
+        "status": "unblock"
     }
 ]

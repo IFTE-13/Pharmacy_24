@@ -38,7 +38,7 @@ if(isset($_POST["submission"]))
         $gender= "Must select gender"."<br>";
     }
 
-    $cusreg=file_get_contents("../../view/admin/userData.json",true);
+    $cusreg=file_get_contents("../data/userData.json",true);
     $arrcus=json_decode($cusreg);
     $cusarray = array(
         "Name"=>$name,
@@ -58,7 +58,7 @@ if(isset($_POST["submission"]))
        
  else 
  {
-    if(file_put_contents("../../view/admin/userData.json",$jsonarr))
+    if(file_put_contents("../data/userData.json",$jsonarr))
         {
             header("location: ../customer/customerlogin.php");
         }

@@ -15,7 +15,8 @@
                     <a href="../admin/adminUser.php">| Add User |</a>
                     <a href="../admin/adminRemoveUser.php">Remove User |</a>
                     <a href="../admin/adminBlockUser.php">Un/Block User |</a>
-                    <a href="">Complains |</a>
+                    <a href="../admin/complains.php">Complains |</a>
+                    <a href="../admin/transactionHistory.php">Transactions |</a>
                 </td>
             </tr>
             <tr>
