@@ -3,11 +3,23 @@
     include("../../control/adminChangePassword.php");
 ?>
 <html>
+    <head>
+        <title>
+            Change Password
+        </title>
+    </head>
     <body>
-       <center>
+       
        <table width="50%">
+       <tr>
+            <td>
+            <a href="../admin/adminProfile.php">| Profile |</a>
+            <a href="../admin/adminPassChange.php">Change Password |</a>
+            </td>
+        </tr>
         <tr>
             <td>
+                <center>
             <u><h2>Change Password</h2></u>
         <form action="" method="POST">
             <table>
@@ -40,11 +52,11 @@
             ?>
         </td>
     </tr>
-    </table>
-        </form>
-            </td>
+</table>
+</form>
+</td>
+</center>
         </tr>
        </table>
-       </center>
     </body>
 </html>

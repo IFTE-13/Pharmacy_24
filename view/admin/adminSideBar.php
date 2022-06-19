@@ -15,7 +15,7 @@
                 <td><h3><a href="http://localhost/Pharmacy24/view/admin/adminUser.php">Customers</a></h3></td>
                 <td><h3><a href="http://localhost/Pharmacy24/view/admin/adminSeller.php">Seller</a></h3></td>
                 <td><h3><a href="http://localhost/Pharmacy24/view/admin/adminSupplier.php">Suppliers</a></h2></td>
-                <td><h3><a href="http://localhost/Pharmacy24/view/admin/adminSettings.php">Settings</a></h2></td>
+                <td><h3><a href="http://localhost/Pharmacy24/view/admin/adminProduct.php">Products</a></h2></td>
                 <td><h3><a href="http://localhost/Pharmacy24/control/logout.php">Logout</a></h2></td>
             </tr>
         </table>

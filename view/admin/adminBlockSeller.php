@@ -14,7 +14,7 @@
                 <td>
                     <a href="../admin/adminSeller.php">| Add Seller |</a>
                     <a href="../admin/adminRemoveSeller.php">Remove Seller</a>
-                    <a href="../admin/adminBlockSeller.php">| Block Seller |</a>
+                    <a href="../admin/adminBlockSeller.php">| Un/Block Seller |</a>
                     <a href="">Complains |</a>
                 </td>
             </tr>

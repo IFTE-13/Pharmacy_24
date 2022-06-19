@@ -1,6 +1,5 @@
 <?php
     session_start();
-    require("../data/adminData");
     $adminUsername = $_SESSION["username"];
     $passwordChangeError = "";
 
@@ -18,17 +17,16 @@
         }
         else{
             if($value->username == $adminUsername && $value->password == $current){
-                if(strlen($new)< 8 || strlen($confirm) < 8){
+                if(strlen($new)< 6 || strlen($confirm) < 6){
                     $passwordChangeError = 'Password must be atleast 8 charecters';
                 }
                 else{
                     if($new == $confirm){
                         $value->password = $new;
                         $new_data = json_encode($data,JSON_PRETTY_PRINT);
-                        if(file_put_contents("adminData.json",$new_data)){
+                        if(file_put_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/adminData.json',$new_data)){
                             $passwordChangeError = "Password Changed";
                         }
-                        $passwordChangeError = "Confirm password didn't matched"; 
                     }
                     else{
                         $passwordChangeError = "Operation successful";
