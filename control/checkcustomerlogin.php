@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $customerloginError = "";
     $email = "";
     
@@ -12,7 +13,11 @@
         else{
             foreach($data as $key=>$value){
                 if($value->email == $_REQUEST["email"] && $value->password == $_REQUEST["password"]){
-                    
+                    $_SESSION["name"] = $value->name;
+                    $_SESSION['email'] = $_REQUEST["email"];
+                    $_SESSION["username"] = $value->username;
+                    $_SESSION["dateofbirth"] = $value->dateofbirth;
+                    $_SESSION["gender"] = $value->gender;
                     header("Location: http://localhost/Pharmacy24/view/home.php");
                 }
                 else{

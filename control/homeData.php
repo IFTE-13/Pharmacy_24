@@ -1,15 +1,22 @@
+<?php
+session_start();
+    include('../control/Customer/addToCart.php');
+    $count = 1;
+?>
 <!DOCTYPE html>
 <html>
     <body>
+        <form action='' method='POST'>
             <table border='1' width="100%">
                 <thead> 
                         <tr>
+                            <th>Serial</th>
                             <th>Medicine Name</th>
                             <th>Company</th>
                             <th>Price ($)</th>
                             <th>Quantity</th>
                             <th>Details</th>
-                            <th>Add to cart</th>
+                            <th>Cart</th>
                         </tr>
                 </thead>
                 <tbody>
@@ -22,22 +29,24 @@
                             echo 
                             " 
                             <tr>
+                                <td><p>$count</p></td>
                                 <td><p>$productData->productName</p></td>
                                 <td><p>$productData->company</p></td>
                                 <td><p>$productData->price</p></td>
                                 <td><p>$productData->quantity</p></td>
                                 <td><p>View</p></td>
                                 <td>
-                                    <center>
-                                        <form action='../control/cart.php' method='POST'>
-                                            <input type='submit' value='Add'></input>
-                                        </form>
-                                    </center>
+                                <input type='submit' value='Add' name='addToCart'></input>
                                 </td>
-                            </tr>
-                            ";
-                    }?>
+                                </tr>
+                                ";
+                                $count++; 
+                            }?>
                 </tbody>
+            </form>
             </table>
+            <?php
+            echo $add;
+            ?>
     </body>
 </html>

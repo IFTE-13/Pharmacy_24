@@ -13,6 +13,9 @@
     ?>
     <center>
     <table>
+        <tr->
+            <td><a href="http://localhost/Pharmacy24/view/customer/customerprofile.php">customerprofile</a></td>
+        </tr->
         <tr>
             <td>
                 <?php

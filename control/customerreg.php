@@ -50,13 +50,23 @@ if(isset($_POST["submission"]))
     
     $arrcus []=$cusarray;
     $jsonarr= json_encode($arrcus,JSON_PRETTY_PRINT);
+    if(empty($name) || empty($email) || empty($username) || empty($password) || empty($dob))
+
+ {
+    echo "Registrion error. Please fill up properly";
+ }
+       
+ else 
+ {
     if(file_put_contents("../../view/admin/userData.json",$jsonarr))
-    {
-        header("location: ../customer/customerlogin.php");
+        {
+            header("location: ../customer/customerlogin.php");
+        }
+        else
+        {
+            echo "Registration Error";
+        }
     }
-    else
-    {
-        echo "Registration Error";
-    }
+   
 }
 ?>    
