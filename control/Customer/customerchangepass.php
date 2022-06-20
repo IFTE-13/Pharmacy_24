@@ -2,8 +2,6 @@
     session_start();
     $customeremail = $_SESSION["email"];
     $passwordChangeError = "";
-    //00000000
-    //11111111
     if(isset($_POST["customerpasscng"])){
         $verifyAdmin = file_get_contents("http://localhost/Pharmacy24/view/admin/userData.json", true);
         $data =  json_decode($verifyAdmin);
@@ -25,7 +23,7 @@
                     if($newpass == $confirmnewpass){
                         $value->password = $newpass;
                         $newpass_data = json_encode($data,JSON_PRETTY_PRINT);
-                        if(file_put_contents("../admin/userData.json",$newpass_data)){
+                        if(file_put_contents("../../Data/userData.json",$newpass_data)){
                             $passwordChangeError = "Password Changed";
                         } 
                     }

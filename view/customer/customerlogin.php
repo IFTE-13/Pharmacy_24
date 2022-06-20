@@ -2,7 +2,7 @@
     include('../navbar.php');
     include('../../control/checkcustomerlogin.php');
     if(isset($_SESSION["username"])){
-        header("Location: customerprofile.php");
+        header("Location: ../home.php");
     }
 ?>
 

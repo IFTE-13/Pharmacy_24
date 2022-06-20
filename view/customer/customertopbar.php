@@ -1,5 +1,6 @@
 <html>
     <body>
+        <center>
         <table>
             <tr>
             <td>
@@ -11,10 +12,11 @@
                 <td><h3><a href="http://localhost/Pharmacy24/view/customer/customerprofile.php">Profile</a></h3></td> 
                 <td><h3><a href="http://localhost/Pharmacy24/view/customer/orderHistory.php">History</a></h3></td>
                 <td><h3><a href="http://localhost/Pharmacy24/view/customer/customerwishlist.php">Wish List</a></h3></td>
-                <td><h3><a href="http://localhost/Pharmacy24/view/customer/customercart.php">Cart</a></h3></td>
+                <td><h3><a href="http://localhost/Pharmacy24/view/customer/cart.php">Cart</a></h3></td>
                 <td><h3><a href="http://localhost/Pharmacy24/view/customer/customercomplain.php">Settings</a></h3></td>
                 <td><h3><a href="http://localhost/Pharmacy24/control/logout.php">Logout</a></h3></td> 
             </tr>
         </table>
+        </center>
     </body>
 </html>

@@ -1,5 +1,4 @@
 <?php
-session_start();
     include('../control/Customer/addToCart.php');
     $count = 1;
 ?>
@@ -30,7 +29,7 @@ session_start();
                             " 
                             <tr>
                                 <td><p>$count</p></td>
-                                <td><p>$productData->productName</p></td>
+                                <td><p name='productName'>$productData->productName</p></td>
                                 <td><p>$productData->company</p></td>
                                 <td><p>$productData->price</p></td>
                                 <td><p>$productData->quantity</p></td>
@@ -45,8 +44,5 @@ session_start();
                 </tbody>
             </form>
             </table>
-            <?php
-            echo $add;
-            ?>
     </body>
 </html>

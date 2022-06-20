@@ -18,12 +18,12 @@
         "status": "unblock"
     },
     {
-        "name": "a",
+        "name": "Sanjida Hoque",
         "email": "b@gmail",
-        "username": "admin",
-        "password": "00000000",
-        "dateofbirth": "2022-05-29",
-        "gender": "female",
-        "status": "block"
+        "username": "Sanjida",
+        "password": "123456789",
+        "dateofbirth": "2022-05-30",
+        "gender": "Must select gender<br>",
+        "status": "unblock"
     }
 ]

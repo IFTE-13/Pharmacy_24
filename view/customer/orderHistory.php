@@ -4,6 +4,9 @@ session_start();
 ?>
 
 <html>
+    <head>
+        <title>Order Histories</title>
+    </head>
     <body>
         <table>
             <tr>
@@ -30,6 +33,8 @@ session_start();
         </tr>
         </table>
         <center>
+            <hr>
+            <h3><u>Orders</u></h3>
         <table border="1" width="50%">
                 <thead> 
                         <tr>

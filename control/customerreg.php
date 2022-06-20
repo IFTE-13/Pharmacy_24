@@ -38,14 +38,16 @@ if(isset($_POST["submission"]))
         $gender= "Must select gender"."<br>";
     }
 
-    $cusreg=file_get_contents("../data/userData.json",true);
+    $cusreg=file_get_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/userData.json',true);
     $arrcus=json_decode($cusreg);
     $cusarray = array(
-        "Name"=>$name,
-        "Email"=>$email,
-        "Username"=>$username,
-        "Password"=>$password,
-        "DateofBirth"=>$dob
+        "name"=>$name,
+        "email"=>$email,
+        "username"=>$username,
+        "password"=>$password,
+        "dateofbirth"=>$dob,
+        "gender"=>$gender,
+        "status"=>"unblock"
     );
     
     $arrcus []=$cusarray;
@@ -58,7 +60,7 @@ if(isset($_POST["submission"]))
        
  else 
  {
-    if(file_put_contents("../data/userData.json",$jsonarr))
+    if(file_put_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/userData.json',$jsonarr))
         {
             header("location: ../customer/customerlogin.php");
         }

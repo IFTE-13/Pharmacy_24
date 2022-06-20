@@ -1,12 +1,12 @@
 <?php
-session_start();
+    session_start();
     include("customertopbar.php");
-    include("../../control/Customer/customerCompain.php");
+    include("../../control/Customer/deleteaccount.php");
 ?>
 
 <html>
     <head>
-        <title>Complain</title>
+        <title>Delete account</title>
     </head>
     <body>
         <table>
@@ -14,14 +14,14 @@ session_start();
                 <td>
                     <a href="../customer/customerchangepassword.php">Change Password</a>
                     <a href="../customer/customercomplain.php">Complain</a>
-                    <a href="../customer/customerdeleteaccount.php">Delete Account</a> 
+                    <a href="../customer/customerdeleteaccount.php">Delete Account</a>
                 </td>
             </tr>    
             <form action="" method="POST">
     <center>
                     <table>
                         <tr>
-                            <td><h1><u>Let us know about your complain</u></h1></td>
+                            <td><h1><u>Delete your account</u></h1></td>
                         </tr>
         <tr>
             <td><h3>Name:</h3></td>
@@ -32,17 +32,13 @@ session_start();
             <td><input type="email" name="email" id="" placeholder = <?php echo $_SESSION["email"] ?> disabled></td>
         </tr>
         <tr>
-            <td><h3>Complain:</h3></td>
-            <td><input type="text" name="complain" id=""></td>
-        </tr>
-        <tr>
             <td></td>
             <td>
-                <input type="submit" value="Submit" name="customercomplain">
+                <input type="submit" value="Submit" name="deletecusacc">
             </td>
             <td>
                 <?php
-                    echo $complain;
+                    echo $deleteError;
                 ?>
             </td>
         </tr>

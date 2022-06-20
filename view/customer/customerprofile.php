@@ -1,5 +1,5 @@
 <?php
-session_start();
+    session_start();
     include("customertopbar.php"); 
 ?>
 
@@ -8,44 +8,46 @@ session_start();
  
 </head>
 <body>
-    <u><h1>Profile</h1></u>
+   <center>
+   <u><h1>Profile</h1></u>
     <table>
         <tr>
             <td><h3>Name: </h3></td>
-            <td><?php
+            <td><h3><?php
                     echo $_SESSION['name'];
-                ?></td>
+                ?></h3></td>
         </tr>
         <tr>
             <td><h3>Username: </h3></td>
-            <td><?php
+            <td><h3><?php
                     echo $_SESSION['username'];
-                ?></td>
+                ?></h3></td>
         </tr>
         <tr>
             <td><h3>Email: </h3></td>
             <td>
-                <?php
+                <h3><?php
                     echo $_SESSION['email'];
-                ?>
+                ?></h3>
             </td>
         </tr>
         <tr>
             <td><h3>Gender: </h3></td>
             <td>
-            <?php
+            <h3><?php
                     echo $_SESSION['gender'];
-                ?>
+                ?></h3>
             </td>
         </tr>
         <tr>
             <td><h3>Date of birth: </h3></td>
             <td>
-            <?php
+<h3>            <?php
                     echo $_SESSION['dateofbirth'];
-                ?>
+                ?></h3>
             </td>
         </tr>
 </table>
+   </center>
 </body>
     </html>
