@@ -1,6 +1,9 @@
 <?php
     include("customertopbar.php");
     include("../../control/Customer/customerchangepass.php");
+    if(empty($_SESSION["customer"])){
+        header("Location: ../customer/customerlogin.php");
+    }
 ?>
 
 <html>

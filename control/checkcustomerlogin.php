@@ -14,6 +14,7 @@
             foreach($data as $key=>$value){
                 if($value->email == $_REQUEST["email"] && $value->password == $_REQUEST["password"]){
                     $_SESSION["name"] = $value->name;
+                    $_SESSION["customer"] = "customer";
                     $_SESSION["email"] = $value->email;
                     $_SESSION["username"] = $value->username;
                     $_SESSION["dateofbirth"] = $value->dateofbirth;

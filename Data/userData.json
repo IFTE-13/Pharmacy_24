@@ -25,5 +25,14 @@
         "dateofbirth": "2022-05-30",
         "gender": "Must select gender<br>",
         "status": "unblock"
+    },
+    {
+        "name": "Mariam",
+        "email": "admin@gmail.com",
+        "username": "admin",
+        "password": "00000000",
+        "dateofbirth": "2022-05-29",
+        "gender": "female",
+        "status": "unblock"
     }
 ]
