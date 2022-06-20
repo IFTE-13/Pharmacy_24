@@ -13,6 +13,7 @@
                 <td>
                     <a href="../customer/customerchangepassword.php">Change Password</a>
                     <a href="../customer/customercomplain.php">Complain</a>
+                    <a href="../customer/customerdeleteaccount.php">Delete Account</a>
                    
                 </td>
 </tr>    

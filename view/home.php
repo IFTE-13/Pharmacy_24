@@ -1,6 +1,13 @@
 <?php
+    session_start();
     if(isset($_SESSION["username"]) && isset($_SESSION["role"])){
         header("Location: adminProfile.php");
+    }
+    if(isset($_SESSION["username"])){
+        include('../view/customer/customertopbar.php');
+    }
+    else{
+        include("navbar.php");
     }
 ?>
 <html>
@@ -8,14 +15,10 @@
     <title>Pharmacy 24</title>
 </head>
 <body>
-    <?php
-        include("navbar.php");
-    ?>
+    
     <center>
+        <h3><u>Products</u></h3>
     <table>
-        <tr->
-            <td><a href="http://localhost/Pharmacy24/view/customer/customerprofile.php">customerprofile</a></td>
-        </tr->
         <tr>
             <td>
                 <?php

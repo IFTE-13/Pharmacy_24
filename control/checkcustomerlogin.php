@@ -3,7 +3,7 @@
     $customerloginError = "";
     $email = "";
     
-    $checkcustomerinfo = file_get_contents("http://localhost/Pharmacy24/view/admin/userData.json", true);
+    $checkcustomerinfo = file_get_contents("http://localhost/Pharmacy24/data/userData.json", true);
     $data =  json_decode($checkcustomerinfo);
 
     if(isset($_POST["submit"])){
@@ -14,7 +14,7 @@
             foreach($data as $key=>$value){
                 if($value->email == $_REQUEST["email"] && $value->password == $_REQUEST["password"]){
                     $_SESSION["name"] = $value->name;
-                    $_SESSION['email'] = $_REQUEST["email"];
+                    $_SESSION["email"] = $value->email;
                     $_SESSION["username"] = $value->username;
                     $_SESSION["dateofbirth"] = $value->dateofbirth;
                     $_SESSION["gender"] = $value->gender;
