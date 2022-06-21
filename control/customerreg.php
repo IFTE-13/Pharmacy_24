@@ -3,6 +3,7 @@ $usernameError="";
 $passwordError="";
 $nameError="";
 $emailError="";
+$gendererror="";
 if(isset($_POST["submission"]))
 {
     $username=$_REQUEST["username"];
@@ -11,7 +12,7 @@ if(isset($_POST["submission"]))
     $email = $_REQUEST["email"];
     $password=$_REQUEST["password"];
     $dob=$_REQUEST["dob"];
-    
+    $gender=$_REQUEST["gender"];
     
     if(empty($name))
     {
@@ -32,12 +33,12 @@ if(isset($_POST["submission"]))
     {
         $passwordError= "Password should be more than 6 characters" ."<br>";
     }   
-    $gender="";
+   
     if(empty($gender))
     {
-        $gender= "Must select gender"."<br>";
+        $gendererror= "Must select gender"."<br>";
     }
-
+    
     $cusreg=file_get_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/userData.json',true);
     $arrcus=json_decode($cusreg);
     $cusarray = array(
