@@ -1,5 +1,5 @@
 <?php
-    include('../customer/customertopbar.php');
+    require('../customer/customertopbar.php');
     include("../../control/Customer/payment.php");
     if(empty($_SESSION["customer"])){
         header("Location: ../customer/customerlogin.php");
