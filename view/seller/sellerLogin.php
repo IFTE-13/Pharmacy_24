@@ -35,7 +35,7 @@
     <tr>
         <td>
             <input type="submit" value="Login" name="submit">
-            <input type="button" value="Registration" />
+            <button><a href="../seller/sellerRegistration.php">Registration</a></button>
         </td>
         <td>
         <?php

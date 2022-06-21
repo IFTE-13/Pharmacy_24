@@ -1,4 +1,5 @@
 <?php
+include('../navbar.php');
     include("../../control/customerreg.php");
 ?>
 <html>

@@ -1,7 +1,7 @@
 <?php
    
     include("navbar.php");
-	include('../../control/checkSellerRegistration.php');
+	include('../../control/seller/checkSellerRegistration.php');
 	//include('http://localhost/Pharmacy_24/control/checkSellerRegistration.php');
 ?>
 <html>
@@ -68,7 +68,7 @@
         <td><input type="submit" name="submission">
 <input type="reset" name="Reset"></td>
         <tr>
-            <td><h3>or Have an account?</h3><a href="http://localhost/Pharmacy_24/view/login.php">Login</a></td>
+            <td><h3>or Have an account?</h3><a href="http://localhost/Pharmacy24/view/seller/sellerLogin.php">Login</a></td>
         </tr>
     </table>
     </form>
