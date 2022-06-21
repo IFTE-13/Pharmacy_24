@@ -1,5 +1,6 @@
 <?php
-include("../control/CheckSupplierCart.php");
+include("../supplier/supplierTopBar.php");
+include("../../control/CheckSupplierCart.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +12,7 @@ include("../control/CheckSupplierCart.php");
 </head>
 <body>
 
-<form action="" method = "POST1">
+<form action="" method = "POST">
     <table>
     <td><h1> PRODUCTS </h1></td>
     <tr>

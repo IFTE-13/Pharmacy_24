@@ -1,4 +1,5 @@
 <?php
+include("../navbar.php");
     include("../../control/CheckSupplierLogin.php");
 ?>
 <html lang="en">
@@ -22,6 +23,11 @@
     </tr>
     <tr>
             <td><input type="submit" value="submit" name="submission"></td>
+            <td>
+                <?php
+                    echo $loginCheck;
+                ?>
+            </td>
     </tr>
     <tr>
         <td><h2>DONT HAVE ANY ACCOUT ! </h2></td>
