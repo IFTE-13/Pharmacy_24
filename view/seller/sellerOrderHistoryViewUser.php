@@ -1,10 +1,4 @@
-<?php
-    session_start();
-    include("customertopbar.php");
-    if(empty($_SESSION["customer"])){
-        header("Location: ../customer/customerlogin.php");
-    }
-?>
+
 
 <html>
     <head>
@@ -48,11 +42,9 @@
                 </thead>
                 <tbody>
                     <?php
-                        $load = file_get_contents("http://localhost/Pharmacy24/Data/customerHistory.json");
+                        $load = file_get_contents("http://localhost/Pharmacy_24/Data/customerHistory.json");
                         $product =  json_decode($load);
-
                         foreach($product as $key=>$productData){
-                            
                             echo 
                             " 
                             <center>

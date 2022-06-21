@@ -2,6 +2,9 @@
     session_start();
     include("customertopbar.php");
     include("../../control/Customer/deleteaccount.php");
+    if(empty($_SESSION["customer"])){
+        header("Location: ../customer/customerlogin.php");
+    }
 ?>
 
 <html>

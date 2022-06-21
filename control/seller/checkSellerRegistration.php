@@ -3,7 +3,6 @@ $usernameError="";
 $passwordError="";
 $nameError="";
 $emailError="";
-$gendererror="";
 if(isset($_POST["submission"]))
 {
     $username=$_REQUEST["username"];
@@ -11,35 +10,30 @@ if(isset($_POST["submission"]))
     $name=$_REQUEST["name"];
     $email = $_REQUEST["email"];
     $password=$_REQUEST["password"];
-    $dob=$_REQUEST["dob"];
-    $gender=$_REQUEST["gender"];
-    
+    $dob=$_REQUEST["dob"];  
     if(empty($name))
     {
-        $nameError= "name is empty";
+        $nameError= "Name is empty";
     }
     if(empty($email))
     {
         $emailError= "Email should not be empty";
     }
-
     if(empty($username))
     {
         $usernameError= "the username is empty"."<br>";
-    }
-
-    
+    }   
     if(strlen($password) <6)
     {
         $passwordError= "Password should be more than 6 characters" ."<br>";
     }   
-   
+    $gender="";
     if(empty($gender))
     {
-        $gendererror= "Must select gender"."<br>";
+        $gender= "Must select gender"."<br>";
     }
-    
-    $cusreg=file_get_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/userData.json',true);
+
+    $cusreg=file_get_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy_24/data/sellerData.json',true);
     $arrcus=json_decode($cusreg);
     $cusarray = array(
         "name"=>$name,
@@ -50,7 +44,7 @@ if(isset($_POST["submission"]))
         "gender"=>$gender,
         "status"=>"unblock"
     );
-    
+	
     $arrcus []=$cusarray;
     $jsonarr= json_encode($arrcus,JSON_PRETTY_PRINT);
     if(empty($name) || empty($email) || empty($username) || empty($password) || empty($dob))
@@ -61,13 +55,13 @@ if(isset($_POST["submission"]))
        
  else 
  {
-    if(file_put_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/userData.json',$jsonarr))
+    if(file_put_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy_24/data/sellerData.json',$jsonarr))
         {
-            header("location: ../customer/customerlogin.php");
+            header("location: ../seller/sellerLogin.php");
         }
         else
         {
-            echo "Registration Error";
+            echo "Sorry Registration Error";
         }
     }
    

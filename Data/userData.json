@@ -25,5 +25,41 @@
         "dateofbirth": "2022-05-30",
         "gender": "Must select gender<br>",
         "status": "unblock"
+    },
+    {
+        "name": "Mariam",
+        "email": "admin@gmail.com",
+        "username": "admin",
+        "password": "00000000",
+        "dateofbirth": "2022-05-29",
+        "gender": "female",
+        "status": "unblock"
+    },
+    {
+        "name": "Sanjida Hoque",
+        "email": "sa@gmail.com",
+        "username": "Sathi",
+        "password": "111111",
+        "dateofbirth": "1999-06-21",
+        "gender": "Must select gender<br>",
+        "status": "unblock"
+    },
+    {
+        "name": "Iftekhar",
+        "email": "if@gmail.com",
+        "username": "Ifte",
+        "password": "111111",
+        "dateofbirth": "2022-06-01",
+        "gender": "Must select gender<br>",
+        "status": "unblock"
+    },
+    {
+        "name": "Sa",
+        "email": "s@gmail.com",
+        "username": "S Sathi",
+        "password": "99999999",
+        "dateofbirth": "2022-06-09",
+        "gender": null,
+        "status": "unblock"
     }
 ]
