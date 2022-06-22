@@ -64,7 +64,12 @@ include('../navbar.php');
             <td><input type="date" name="dob" id=""></td>
         </tr>
         <td><input type="submit" name="submission"></td>
-<td><input type="reset" name="Reset"></td>
+        <td><input type="reset" name="Reset"></td>
+        <td>
+            <?php
+            echo $regError;
+            ?>
+        </td>
         <tr>
             <td><h3><small>Have an account?</small></h3></td>
             <td><a href="http://localhost/Pharmacy24/view/login.php">Login</a></td>

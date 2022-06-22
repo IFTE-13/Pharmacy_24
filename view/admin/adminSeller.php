@@ -1,7 +1,6 @@
 <?php
     include("adminSideBar.php");
     include("../../control/admin/seller/adminSellerAdd.php");
-    
 ?>
 
 <html>

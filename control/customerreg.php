@@ -4,10 +4,10 @@ $passwordError="";
 $nameError="";
 $emailError="";
 $gendererror="";
+$regError = "";
 if(isset($_POST["submission"]))
 {
     $username=$_REQUEST["username"];
-
     $name=$_REQUEST["name"];
     $email = $_REQUEST["email"];
     $password=$_REQUEST["password"];
@@ -56,7 +56,7 @@ if(isset($_POST["submission"]))
     if(empty($name) || empty($email) || empty($username) || empty($password) || empty($dob))
 
  {
-    echo "Registrion error. Please fill up properly";
+    $regError = "Registrion error. Please fill up properly";
  }
        
  else 
@@ -67,7 +67,7 @@ if(isset($_POST["submission"]))
         }
         else
         {
-            echo "Registration Error";
+            $regError = "Registration Error";
         }
     }
    

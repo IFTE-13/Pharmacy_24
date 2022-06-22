@@ -1,6 +1,9 @@
 <?php
     include("adminSideBar.php");
     include("../../control/admin/checkAdminLogin.php");
+    if(empty($_SESSION["role"])){
+        header("Location: http://localhost/Pharmacy24/view/admin/adminLogin.php");
+    }
 ?>
 
 <html>
