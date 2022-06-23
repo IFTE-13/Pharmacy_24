@@ -16,5 +16,11 @@
         "company": "Uniliver",
         "price": "12",
         "quantity": "1"
+    },
+    {
+        "productName": "peracitemol",
+        "company": "100",
+        "price": "10",
+        "quantity": "100"
     }
 ]

@@ -5,7 +5,6 @@ $userAdded = "";
         $email = $_REQUEST['email'];
         $username = $_REQUEST['username'];
         $dob = $_REQUEST['dob'];
-        $gender = $_REQUEST['gender'];
         $status = "unblock";
 
         $filecontents=file_get_contents("http://localhost/Pharmacy24/data/userData.json",true);
@@ -17,7 +16,7 @@ $userAdded = "";
             'username' => $username,
             'password' => "00000000",
             'dateofbirth' => $dob,
-            'gender' => $gender,
+            'gender' => "male",
             'status' => $status
             
         );

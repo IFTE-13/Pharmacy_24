@@ -1,7 +1,7 @@
 [
     {
         "name": "Admin",
-        "email": "admin@gmail.com",
+        "email": "abc",
         "username": "admin",
         "password": "123456",
         "dateofbirth": "1980-05-29",

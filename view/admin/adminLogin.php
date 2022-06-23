@@ -21,13 +21,7 @@
     <tr>
             <td><h3>Password:</h3></td>
             <td><input type="password" name="password" id=""></td>
-    </tr>
-    <tr>
-        <td>
-            <input type="checkbox" name="" id="">
-            <label for="">Remember Me</label>
-        </td>
-    </tr>
+    </tr>    </tr>
     <tr>
         <td>
             <input type="submit" value="LOGIN" name="submit">

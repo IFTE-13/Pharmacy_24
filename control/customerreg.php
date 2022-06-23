@@ -5,6 +5,7 @@ $nameError="";
 $emailError="";
 $gendererror="";
 $regError = "";
+$dateerror = "";
 if(isset($_POST["submission"]))
 {
     $username=$_REQUEST["username"];
@@ -12,7 +13,6 @@ if(isset($_POST["submission"]))
     $email = $_REQUEST["email"];
     $password=$_REQUEST["password"];
     $dob=$_REQUEST["dob"];
-    $gender=$_REQUEST["gender"];
     
     if(empty($name))
     {
@@ -38,6 +38,10 @@ if(isset($_POST["submission"]))
     {
         $gendererror= "Must select gender"."<br>";
     }
+    if(isset($dob))
+    {
+        $dateerror= "Must select Date of birth";
+    }
     
     $cusreg=file_get_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/userData.json',true);
     $arrcus=json_decode($cusreg);
@@ -47,7 +51,7 @@ if(isset($_POST["submission"]))
         "username"=>$username,
         "password"=>$password,
         "dateofbirth"=>$dob,
-        "gender"=>$gender,
+        "gender"=>"male",
         "status"=>"unblock"
     );
     
@@ -61,7 +65,11 @@ if(isset($_POST["submission"]))
        
  else 
  {
-    if(file_put_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/userData.json',$jsonarr))
+    if($_REQUEST["password"] != $_REQUEST["confirmPassword"]){
+        $regError = "password and confirm password is not same";
+    }
+    else{
+        if(file_put_contents($_SERVER['DOCUMENT_ROOT'].'/Pharmacy24/data/userData.json',$jsonarr))
         {
             header("location: ../customer/customerlogin.php");
         }
@@ -69,6 +77,7 @@ if(isset($_POST["submission"]))
         {
             $regError = "Registration Error";
         }
+    }
     }
    
 }
