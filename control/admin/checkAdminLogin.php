@@ -9,6 +9,9 @@
             if(empty($_REQUEST["username"])||empty($_REQUEST["password"])){
             $loginError = 'None of the fields cannot be empty';
         }
+        elseif(is_numeric($_REQUEST["username"])){
+            $loginError = 'username cannot be numaric';
+        }
         else{
             if(strlen($_REQUEST["password"]) < 6){
                 $loginError = 'Password must be atleast 6 charecter';

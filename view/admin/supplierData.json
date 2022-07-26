@@ -28,5 +28,15 @@
         "gender": "female",
         "company": "none",
         "status": "unblock"
+    },
+    {
+        "name": "",
+        "email": "",
+        "username": "",
+        "password": "00000000",
+        "dateofbirth": "",
+        "gender": null,
+        "company": "",
+        "status": "unblock"
     }
 ]

@@ -18,5 +18,25 @@
         "gender": "female",
         "joiningDate": "2022-05-29",
         "status": "unblock"
+    },
+    {
+        "name": "",
+        "email": "",
+        "username": "",
+        "password": "00000000",
+        "dateofbirth": "",
+        "gender": null,
+        "joiningDate": "",
+        "status": "unblock"
+    },
+    {
+        "name": "",
+        "email": "",
+        "username": "",
+        "password": "00000000",
+        "dateofbirth": "",
+        "gender": null,
+        "joiningDate": "",
+        "status": "unblock"
     }
 ]

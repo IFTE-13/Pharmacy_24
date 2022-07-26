@@ -62,6 +62,11 @@ include('../navbar.php');
         <tr>
             <td><h3>Date of Birth:</h3></td>
             <td><input type="date" name="dob" id=""></td>
+            <td>
+            <?php
+                 echo $dateerror;
+                ?>
+            </td>
         </tr>
         <td><input type="submit" name="submission"></td>
         <td><input type="reset" name="Reset"></td>
