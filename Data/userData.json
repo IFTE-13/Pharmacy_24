@@ -1,20 +1,38 @@
 [
-  {
-    "name": "Admin",
-    "email": "admin@gmail.com",
-    "username": "admin",
-    "password": "admin",
-    "dateofbirth": "2022-05-30",
-    "gender": "male",
-    "status": "block"
-  },
-  {
-    "name": "Mariam",
-    "email": "chittonondi.admin@gmail.com",
-    "username": "mariam",
-    "password": "123",
-    "dateofbirth": "2022-05-29",
-    "gender": "female",
-    "status": "unblock"
-  }
+    {
+        "name": "Admin",
+        "email": "admin@gmail.com",
+        "username": "admin",
+        "password": "admin",
+        "dateofbirth": "2022-05-30",
+        "gender": "male",
+        "status": "block"
+    },
+    {
+        "name": "Mariam",
+        "email": "chittonondi.admin@gmail.com",
+        "username": "mariam",
+        "password": "123",
+        "dateofbirth": "2022-05-29",
+        "gender": "female",
+        "status": "unblock"
+    },
+    {
+        "name": "if",
+        "email": "b@gmail",
+        "username": "ifte",
+        "password": "11111111",
+        "dateofbirth": "2022-06-14",
+        "gender": "male",
+        "status": "unblock"
+    },
+    {
+        "name": "SANJIDA HOQUE SATHI",
+        "email": "sanjida@gmail.com",
+        "username": "___lazyartsy___",
+        "password": "00000000",
+        "dateofbirth": "2022-05-29",
+        "gender": "male",
+        "status": "unblock"
+    }
 ]

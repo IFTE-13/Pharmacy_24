@@ -7,26 +7,28 @@
         include('../view/customer/customertopbar.php');
     }
     else{
-        include("navbar.php");
+        include("nav.php");
     }
 ?>
+
 <html>
 <head>
-    <title>Pharmacy 24</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Pharmachy'24</title>
 </head>
 <body>
+    <div class="top">
+    <?php
     
-    <center>
-        <h3><u>Products</u></h3>
-    <table>
-        <tr>
-            <td>
-                <?php
-                    include("../control/homeData.php");
-                ?>
-            </td>
-        </tr>
-    </table>
-    </center>
+?>
+        <div class="top-text">
+            <div>
+                <h1>get your <br>
+                    <span class="top-span">necessity</span> <br>
+                    here with few clicks</h1>
+                <button class="btn co">Check out</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
