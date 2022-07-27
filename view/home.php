@@ -8,25 +8,30 @@
     }
     else{
         include("navbar.php");
+        include("../view/admin/adminNavbar.php");
     }
 ?>
 <html>
+
 <head>
     <title>Pharmacy 24</title>
+    <link rel="stylesheet" href="../css/home.css">
 </head>
+
 <body>
-    
+
     <center>
         <h3><u>Products</u></h3>
-    <table>
-        <tr>
-            <td>
-                <?php
+        <table>
+            <tr>
+                <td>
+                    <?php
                     include("../control/homeData.php");
                 ?>
-            </td>
-        </tr>
-    </table>
+                </td>
+            </tr>
+        </table>
     </center>
 </body>
+
 </html>

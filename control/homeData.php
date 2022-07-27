@@ -4,22 +4,21 @@
 ?>
 <!DOCTYPE html>
 <html>
-    <body>
-        <form action='' method='POST'>
-            <table border='1' width="100%">
-                <thead> 
-                        <tr>
-                            <th>Serial</th>
-                            <th>Medicine Name</th>
-                            <th>Company</th>
-                            <th>Price ($)</th>
-                            <th>Quantity</th>
-                            <th>Details</th>
-                            <th>Cart</th>
-                        </tr>
-                </thead>
-                <tbody>
-                    <?php
+
+<body>
+    <form action='' method='POST'>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Serial</th>
+                    <th>Medicine Name</th>
+                    <th>Company</th>
+                    <th>Price ($)</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
                         $load = file_get_contents("../Data/productData.json");
                         $product =  json_decode($load);
 
@@ -33,16 +32,12 @@
                                 <td><p>$productData->company</p></td>
                                 <td><p>$productData->price</p></td>
                                 <td><p>$productData->quantity</p></td>
-                                <td><p>View</p></td>
-                                <td>
-                                <input type='submit' value='Add' name='addToCart'></input>
-                                </td>
-                                </tr>
                                 ";
                                 $count++; 
                             }?>
-                </tbody>
-            </form>
-            </table>
-    </body>
+            </tbody>
+    </form>
+    </table>
+</body>
+
 </html>

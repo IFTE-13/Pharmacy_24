@@ -1,0 +1,41 @@
+.content {
+  display: flex;
+}
+.registration {
+  display: flex;
+}
+.registration p {
+  margin-right: 30px;
+}
+.login-left {
+  width: 50%;
+}
+.login-right {
+  margin-top: 10%;
+}
+.input-field {
+}
+
+.login-btn {
+  width: 10vh;
+  margin-top: 20px;
+}
+
+.btn {
+  border: none;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  opacity: 0.85;
+}
+
+.btn:hover {
+  box-shadow: 0px 7px 10px rgb(0, 0, 0);
+  color: blue;
+  opacity: 1.2;
+}
