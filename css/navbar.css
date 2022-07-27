@@ -1,0 +1,25 @@
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.765);
+    line-height: 50px;
+  }
+  nav ul{
+    float: right;
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+  }
+  nav ul li:hover{
+    background-color:rgb(1, 136, 198);
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    font-weight: bold;
+  }
+
+

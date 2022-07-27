@@ -1,0 +1,53 @@
+.footer-right{
+    padding-left: 100px;
+}
+
+.footer-body-portion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.border{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 10px; 
+    margin-right: 15px;
+    border-right: 1px solid black;
+}
+
+.ex-link{
+    text-decoration: underline !important;
+    font-size: 14px !important;
+    border-right: none !important;
+    padding-right: 0 !important; 
+    margin-right: 0 !important;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 7vh;
+}
+
+.links{
+    margin-top: 25px;
+}
+
+.pricing{
+    margin-top: 40px;
+}
+
+.topP{
+    margin-top: 50px;
+}
