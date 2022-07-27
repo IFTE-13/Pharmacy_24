@@ -1,0 +1,30 @@
+<?php 
+    include("../../model/databaseConnection.php");
+
+    $loginError = "";
+    $name = "";
+    $username = "";
+    $email = "";
+    $dob = "";
+    $gender = "";
+    $nationality = "";
+    $address = "";
+    $phone = "";
+
+    $connection = new databaseConnection();
+    $connectionObject = $connection->openConnection();
+    $userData = $connection->adminProfile($connectionObject, $_REQUEST["username"], "admin");
+        if($userData->num_rows > 0){
+            while($myrow = $userData->fetch_assoc()){
+                $name = $myrow['name'];
+                $username = $myrow['username'];
+                $email = $myrow['email'];
+                $dob = $myrow['dob'];
+                $gender = $myrow['gender'];
+                $nationality = $myrow['nationality'];
+                $address = $myrow['address'];
+                $phone = $myrow['phone'];
+        }
+    }
+
+                        ?>

@@ -1,5 +1,5 @@
 <?php
-    include('../navbar.php');
+    include('../others/nav.php');
     include('../../control/admin/checkAdminLogin.php');
     if(isset($_SESSION["username"])){
         header("Location: adminProfile.php");
@@ -7,6 +7,7 @@
 ?>
 <html>
 <head>
+    <link rel="stylesheet" href="../../css/adminLogin.css">
     <title>Admin Login</title>
 </head>
 <body>

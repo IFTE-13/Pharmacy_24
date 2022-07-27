@@ -25,35 +25,35 @@
                     <table>
                         <tr>
                             <td><h3>Name: </h3></td>
-                            <td><h3><?php echo $_SESSION["name"]; ?></h3></td>
+                            <td><h3><?php echo $name ?></h3></td>
                         </tr>
                         <tr>
                             <td><h3>Username: </h3></td>
-                            <td><h3><?php echo $_SESSION["username"] ?></h3></td>
+                            <td><h3><?php echo $username ?></h3></td>
                         </tr>
                         <tr>
                             <td><h3>Email: </h3></td>
-                            <td><h3><?php echo $_SESSION["email"] ?></h3></td>
+                            <td><h3><?php echo $email ?></h3></td>
                         </tr>
                         <tr>
                             <td><h3>Date of Birth: </h3></td>
-                            <td><h3><?php echo $_SESSION["dateofbirth"] ?></h3></td>
+                            <td><h3><?php echo $dob ?></h3></td>
                         </tr>
                         <tr>
                             <td><h3>Gender: </h3></td>
-                            <td><h3><?php echo $_SESSION["gender"] ?></h3></td>
+                            <td><h3><?php echo $gender ?></h3></td>
                         </tr>
                         <tr>
                             <td><h3>Nationality: </h3></td>
-                            <td><h3><?php echo $_SESSION["nationality"] ?></h3></td>
+                            <td><h3><?php echo $nationality ?></h3></td>
                         </tr>
                         <tr>
                             <td><h3>Address: </h3></td>
-                            <td><h3><?php echo $_SESSION["address"] ?></h3></td>
+                            <td><h3><?php echo $address ?></h3></td>
                         </tr>
                         <tr>
                             <td><h3>Phone: </h3></td>
-                            <td><h3><?php echo $_SESSION["phone"] ?></h3></td>
+                            <td><h3><?php echo $phone ?></h3></td>
                         </tr>
                     </table>
                 </center>

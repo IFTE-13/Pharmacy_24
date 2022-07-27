@@ -13,7 +13,7 @@
 
 <html>
 <head>
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../../css/home.css">
     <title>Pharmachy'24</title>
 </head>
 <body>
@@ -29,6 +29,11 @@
                 <button class="btn co">Check out</button>
             </div>
         </div>
+    </div>
+    <div>
+    <?php
+        include("footer.php");
+?>
     </div>
 </body>
 </html>
