@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.profile {
+  width: 180vh;
+  float: right;
+}
+
+.content-section {
+  border: 1px solid black;
+  margin-top: 4vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+h1 {
+  font-size: 28px;
+  color: black;
+  line-height: 70px;
+  text-align: center;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.sec h3 {
+  padding-top: 3px
+  font-size: 20px;
+  color: black;
+  line-height: 50px;
+  text-align: left;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sec div {
+  margin-left: 35vh;
+}
+
+.update {
+  float: right;
+  margin-top: 5vh;
+  margin-right: 30vh;
+  border: 1px solid black;
+  padding: 4px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.update:hover {
+  background: #1e1e1e;
+  color: white;
+  font-weight: normal;
+}
+
+.sec input {
+    margin-bottom: 3px;
+  margin-top: 0;
+  padding: 3px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px dotted black;
+}
+
+.sec input:focus {
+  border: 1px solid black;
+}
+
+.notify{
+  color: rgb(47, 215, 47);
+  font-weight: bold;
+  margin-top: 5vh;
+  margin-left: 5vh;
+}
+
+.warning{
+  color: red;
+}

@@ -2,7 +2,7 @@
     include('../others/nav.php');
     include('../../control/admin/checkAdminLogin.php');
     if(isset($_SESSION["username"])){
-        header("Location: adminProfile.php");
+        header("Location: admin/adminProfile.php");
     }
 ?>
 <html> -->
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <section class="content">
+    <!-- <section class="content">
         <div class="login-left"></div>
         <div class="login-right">
             <div class="registration">
@@ -30,10 +30,10 @@
             </div>
             <button class="btn login-btn">Login</button>
         </div>
-    </section>
+    </section> -->
     <!-- <div class="content">
     </div> -->
-    <!-- <center>
+    <center>
         <form action="" method="POST">
             <td><u>
                     <h1>Login as Admin</h1>
@@ -65,7 +65,7 @@
             </table>
         </form>
         </form>
-    </center> -->
+    </center>
 </body>
 
 </html>

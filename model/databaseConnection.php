@@ -27,6 +27,18 @@ class databaseConnection{
         return $result;
     }
 
+    function adminUpdateProfile($connection, $username, $name, $email, $dob, $gender, $nationality, $address, $phone){
+        $sqlQuery = "UPDATE admin SET name='$name',gender='$gender',email='$email',dob='$dob',nationality='$nationality',address='$address',phone='$phone' WHERE username = '$username'";
+        $result = $connection->query($sqlQuery);
+        return $result;
+    }
+
+    function adminChangePassword($connection,$table,$username,$password){
+        $sqlQuery = "UPDATE admin SET password='$password' WHERE username='$username'";
+        $result = $connection->query($sqlQuery);
+        return $result;
+    }
+
     function closeConnection($connection)
     {
         $connection -> close();
