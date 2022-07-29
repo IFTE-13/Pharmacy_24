@@ -1,0 +1,60 @@
+h1 {
+  font-size: 28px;
+  color: black;
+  line-height: 70px;
+  text-align: center;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading {
+  width: 180vh;
+  float: right;
+}
+
+.table-container {
+  padding: 32px;
+}
+
+.table-container table {
+  width: 100%;
+  background: #fff;
+  color: #222;
+  padding: 24px;
+  box-shadow: 0 4px 15px -8px rgba(0, 0, 0, 0.4);
+  border-collapse: collapse;
+}
+
+.table-container table thead tr {
+  background: #222;
+  color: #fff;
+}
+
+.table-container table td,
+.table-container table th {
+  padding: 16px 32px;
+  text-align: center;
+}
+
+.table-container table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.picon {
+  padding: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.update {
+  color: green;
+}
+
+.delete {
+  color: red;
+}
+
+.picon:hover {
+  color: black;
+  border-radius: 5px;
+  border: 1px solid crimson;
+}

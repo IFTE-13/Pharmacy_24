@@ -39,6 +39,24 @@ class databaseConnection{
         return $result;
     }
 
+    function showProduct($connection){
+        $sqlQuery = "SELECT * from product";
+        $result = $connection->query($sqlQuery);
+        return $result;
+    }
+
+    function deleteProduct($connection, $name){
+        $sqlQuery = "DELETE from product WHERE name='$name'";
+        $result = $connection->query($sqlQuery);
+        return $result;
+    }
+
+    function updateProduct($connection, $name, $company, $price, $quantity){
+        $sqlQuery = "UPDATE product SET name='$name', company='$company', price='$price', quantity='$quantity' WHERE name='$name'";
+        $result = $connection->query($sqlQuery);
+        return $result;
+    }
+
     function closeConnection($connection)
     {
         $connection -> close();
