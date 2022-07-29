@@ -2,9 +2,9 @@
     session_start();
     include("customertopbar.php"); 
     include("../../control/checkcustomerlogin.php");
-    if(empty($_SESSION["customer"])){
-        header("Location: ../customer/customerlogin.php");
-    }
+    // if(empty($_SESSION["customer"])){
+    //     header("Location: ../customer/customerlogin.php");
+    // }
 ?>
 
 <html>

@@ -1,6 +1,5 @@
 <?php
-include('../navbar.php');
-    
+    include('../navbar.php');
     include("../../control/checkcustomerlogin.php");
 ?>
 <html>

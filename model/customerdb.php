@@ -1,7 +1,6 @@
 <?php
  class db{
     
-    
     function openConn(){
         $dbservername="localhost";
         $dbemail="root";
@@ -19,8 +18,8 @@
         $result = $conn->query("SELECT * FROM ". $table." WHERE email='". $email."' AND password='". $password."'");
         return $result;
     }
-    function checkCustomer($conn, $table, $name,$email,$username,$password,$confirmpassword,$gender,$dob){
-        $sqlQuery = "INSERT INTO $table (Name, Email, Username, Password, Confirm Password, Gender, DOB) VALUES('$name', '$email', '$username', '$password', '$confirmpassword', '$gender', '$dob')";
+    function registrationCustomer($conn, $table, $name,$email,$username,$password,$confirmPassword,$gender,$dob){
+        $sqlQuery = "INSERT INTO $table (Name, Email, Username, Password, ConfirmPassword, Gender, DOB) VALUES('$name', '$email', '$username', '$password', '$confirmPassword', '$gender', '$dob')";
         $result = $conn->query($sqlQuery);
         return $result;
 

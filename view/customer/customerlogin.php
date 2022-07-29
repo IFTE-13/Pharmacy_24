@@ -1,9 +1,9 @@
 <?php
     include('../others/nav.php');
     include('../../control/checkcustomerlogin.php');
-    if(isset($_SESSION["username"])){
-        header("Location: ../home.php");
-    }
+    // if(isset($_SESSION["username"])){
+    //     header("Location: ../home.php");
+    // }
 ?>
 
 <html>
@@ -41,5 +41,9 @@
     </form>
 </form>
 </center>
+
+<?php
+        echo $login;
+    ?>
 </body>
 </html>
