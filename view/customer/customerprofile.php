@@ -1,6 +1,7 @@
 <?php
     session_start();
     include("customertopbar.php"); 
+    include("../../control/checkcustomerlogin.php");
     if(empty($_SESSION["customer"])){
         header("Location: ../customer/customerlogin.php");
     }
@@ -52,5 +53,41 @@
         </tr>
 </table>
    </center>
+
+   <table border='1'>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Confirm Password</th>
+                    <th>Gender</th>
+                    <th>Date of birth</th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php 
+            if(!empty($result) && $result->num_rows > 0){
+                while($row = $results->fetch_assoc()) 
+                echo "
+                <tr>
+                <td>{$row["name"]}</td>
+                <td>{$row["email"]}</td>
+                <td>{$row["username"]}</td>
+                <td>{$row["password"]}</td>
+                <td>{$row["confirmpassword"]}</td>
+                <td>{$row["gender"]}</td>
+                <td>{$row["dob"]}</td>
+                </tr>
+                ";
+                    
+                }
+            
+
+?>
+
+            </tbody>
+            </table>
 </body>
     </html>

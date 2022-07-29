@@ -1,30 +1,45 @@
 <?php
-    session_start();
-    $customerloginError = "";
-    $email = "";
-    
-    $checkcustomerinfo = file_get_contents("http://localhost/Pharmacy24/data/userData.json", true);
-    $data =  json_decode($checkcustomerinfo);
-
-    if(isset($_POST["submit"])){
-        if(empty($_REQUEST["email"])||empty($_REQUEST["password"])){
-            $customerloginError = 'None of the fields cannot be empty';
+include($_SERVER['DOCUMENT_ROOT'] ."/Pharmacy24/model/customerdb.php");
+session_start();
+$result="";
+$registrationError= "";
+  if(isset($_POST["submit"])){
+            if(empty($_REQUEST["email"])){
+            $loginError = 'Fill up email';
+        }
+        elseif(empty($_REQUEST["password"])){
+            $loginError = 'Please input your password';
         }
         else{
-            foreach($data as $key=>$value){
-                if($value->email == $_REQUEST["email"] && $value->password == $_REQUEST["password"]){
-                    $_SESSION["name"] = $value->name;
-                    $_SESSION["customer"] = "customer";
-                    $_SESSION["email"] = $value->email;
-                    $_SESSION["username"] = $value->username;
-                    $_SESSION["dateofbirth"] = $value->dateofbirth;
-                    $_SESSION["gender"] = $value->gender;
-                    header("Location: http://localhost/Pharmacy24/view/home.php");
-                }
-                else{
-                    $customerloginError = 'No User found';
-                }
-            }
-        }
+            $conn= new db();
+            $connectionObject=$conn->openConn();
+            $result=$conn->showAll($connectionObject);
+            if($result->num_rows > 0){
+                    $results=$result;
+             }
+    if(isset($_POST['submission'])){
+    $conn = new db();
+    $connectionObject = $conn->openConn();
+
+    $registerUser = $conn->checkCustomer($connectionObject, "customertable", $_REQUEST["name"] , $_REQUEST["email"] ,$_REQUEST["username"] ,
+    $_REQUEST["password"] ,$_REQUEST["confirmpassword"] ,$_REQUEST["gender"] , $_REQUEST["dob"]);
+
+    
+    header("Location: http://localhost/Pharmacy24/view/customer/customerprofile.php");
+    } 
+    else{
+        $registrationError = "No user found";
+    }
+   
+
 }
+        
+
+$conn->closeConnection($connectionObject);
+
+
+
+  }
+
+
 ?>

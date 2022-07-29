@@ -1,5 +1,5 @@
 <?php
-    include('../navbar.php');
+    include('../others/nav.php');
     include('../../control/checkcustomerlogin.php');
     if(isset($_SESSION["username"])){
         header("Location: ../home.php");

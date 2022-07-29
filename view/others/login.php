@@ -11,13 +11,37 @@
     <title>Login</title>
 </head>
 <body>
-    <section class="login-section">
-        <div>
-        <a href="../admin/adminLogin.php" class="loginBtn">ADMIN</a><br><br>
-        <a href="../view/customer/customerlogin.php" class="loginBtn">CUSTOMER</a><br><br>
-        <a href="../view/seller/sellerLogin.php" class="loginBtn">SELLER</a><br><br>
-        <a href="../view/supplier/CommonLoginSupplier.php" class="loginBtn">SUPPLIER</a>
+        <div>  
+           <section class="login-section">
+                 <!-- <h1 class="type">Choose Account Type</h1> -->
+            <div class="columns">
+                <div class="column">
+                
+                <h3><a href="../admin/adminLogin.php" class="loginBtn admin">ADMIN</h3> 
+                <img src="../../utilities/admin.jpg" width="150px" height="150px" class = "userImg">
+                </a>
+                </div>
+                <div class="column">
+                
+                <h3><a href="../customer/customerlogin.php"  class="loginBtn customer">CUSTOMER</h3>
+                <img src="../../utilities/customer.jpg" width="150px" height="150px" class = "userImg">
+                </a>
+                </div>
+                <div class="column">
+                
+                   <h3><a href="../view/seller/sellerLogin.php"  class="loginBtn">SELLER</h3>
+                   <img src="../../utilities/customer.jpg" width="150px" height="150px" class = "userImg">
+                   </a>
+                </div>
+                <div class="column"> 
+                
+                    <h3><a href="../view/supplier/CommonLoginSupplier.php"  class="loginBtn">SUPPLIER</h3>
+                    <img src="../../utilities/customer.jpg" width="150px" height="150px" class = "userImg">
+                    </a>
+                </div>
+            </div>
+            </section>
         </div>
-    </section>
+  
 </body>
 </html>
