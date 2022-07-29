@@ -12,7 +12,7 @@
             <i class="fas fa-qrcode"></i>
             <span>Profile</span>
         </a>
-        <a href="#">
+        <a href="http://localhost/Pharmacy24/view/admin/admin/product.php">
             <i class="fas fa-link"></i>
             <span>Products</span>
         </a>

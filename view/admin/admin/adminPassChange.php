@@ -5,7 +5,7 @@
 
 <head>
     <title>
-        Change Password
+        Settings
     </title>
     <link rel="stylesheet" href="../../../css/admin/adminProfile.css">
 </head>
