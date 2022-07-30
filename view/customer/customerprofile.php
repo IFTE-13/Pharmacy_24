@@ -1,7 +1,9 @@
 <?php
-    session_start();
-    include("customertopbar.php"); 
+   // session_start();
+    //include("customertopbar.php"); 
+    
     include("../../control/checkcustomerlogin.php");
+    include("customerSidebar.php")
     // if(empty($_SESSION["customer"])){
     //     header("Location: ../customer/customerlogin.php");
     // }
@@ -18,20 +20,20 @@
         <tr>
             <td><h3>Name: </h3></td>
             <td><h3><?php
-                    echo $_SESSION['name'];
+                   // echo $_SESSION['name'];
                 ?></h3></td>
         </tr>
         <tr>
             <td><h3>Username: </h3></td>
             <td><h3><?php
-                    echo $_SESSION['username'];
+                   // echo $_SESSION['username'];
                 ?></h3></td>
         </tr>
         <tr>
             <td><h3>Email: </h3></td>
             <td>
                 <h3><?php
-                    echo $_SESSION['email'];
+                    //echo $_SESSION['email'];
                 ?></h3>
             </td>
         </tr>
@@ -39,7 +41,7 @@
             <td><h3>Gender: </h3></td>
             <td>
             <h3><?php
-                    echo $_SESSION['gender'];
+                 //   echo $_SESSION['gender'];
                 ?></h3>
             </td>
         </tr>
@@ -47,14 +49,14 @@
             <td><h3>Date of birth: </h3></td>
             <td>
 <h3>            <?php
-                    echo $_SESSION['dateofbirth'];
+                    //echo $_SESSION['dateofbirth'];
                 ?></h3>
             </td>
         </tr>
 </table>
    </center>
 
-   <table border='1'>
+   <!--<table border='1'>
             <thead>
                 <tr>
                     <th>Name</th>
@@ -88,6 +90,6 @@
 ?>
 
             </tbody>
-            </table>
+            </table>-->
 </body>
     </html>

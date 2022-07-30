@@ -24,19 +24,19 @@
                 <div class="column">
                 
                 <h3><a href="../customer/customerlogin.php"  class="loginBtn customer">CUSTOMER</h3>
-                <img src="../../utilities/customer.jpg" width="150px" height="150px" class = "userImg">
+                <img src="../../utilities/download.png" width="150px" height="150px" class = "userImg">
                 </a>
                 </div>
                 <div class="column">
                 
                    <h3><a href="../view/seller/sellerLogin.php"  class="loginBtn">SELLER</h3>
-                   <img src="../../utilities/customer.jpg" width="150px" height="150px" class = "userImg">
+                   <img src="../../utilities/seller.jpg" width="150px" height="150px" class = "userImg">
                    </a>
                 </div>
                 <div class="column"> 
                 
                     <h3><a href="../view/supplier/CommonLoginSupplier.php"  class="loginBtn">SUPPLIER</h3>
-                    <img src="../../utilities/customer.jpg" width="150px" height="150px" class = "userImg">
+                    <img src="../../utilities/supplier.jpg" width="150px" height="150px" class = "userImg">
                     </a>
                 </div>
             </div>
